@@ -1,0 +1,5 @@
+task copyFile(type: Copy){
+    from file ("$buildDir/reports/laporan-1.pdf")
+    into file ("$buildDir/toArchive")
+    println 'copy selesai..'
+}

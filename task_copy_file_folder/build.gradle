@@ -1,0 +1,5 @@
+task copyFileDalamFolder(type: Copy) {
+from "$buildDir/reports/laporan-1.pdf", "src/docs/file-1.docs"
+into "$buildDir/toArchive"
+println 'Berhasil copy file diluar folder...'
+}

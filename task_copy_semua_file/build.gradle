@@ -1,0 +1,6 @@
+task copySemuaFile(type: Copy){
+    from "$buildDir/reports"
+    include "*.pdf"
+    into "$buildDir/toArchive"
+    println 'file berhasil di salin....'
+}

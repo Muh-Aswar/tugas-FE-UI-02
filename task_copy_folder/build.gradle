@@ -1,0 +1,6 @@
+task copyFolder(type: Copy) {
+from "$buildDir/reports"
+include "**/*.pdf"
+into "$buildDir/toArchive"
+println 'Berhasil copy semua file pdf....'
+}

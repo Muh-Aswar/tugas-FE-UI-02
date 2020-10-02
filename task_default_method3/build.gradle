@@ -1,0 +1,17 @@
+task setUpConnection {
+    println 'Setting up database connection...'
+}
+
+task connectToDatabase
+connectToDatabase {
+    println 'Connection to database.....'
+}
+
+task extractDatabase {
+    dependsOn setUpConnection, connectToDatabase
+    println 'Database succesfully extracted !'
+}
+
+task closeConnection(dependsOn:extractDatabase){
+    println 'Database connection closed.'
+}
